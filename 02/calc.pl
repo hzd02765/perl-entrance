@@ -1,26 +1,52 @@
 #!/usr/bin/env perl
+
 use strict;
 use warnings;
 
-my $stdin01;
-my $stdin02;
-my $res = 0;
+my $foo;
+my $bar;
 
-$stdin01 = <STDIN>;
-$stdin02 = <STDIN>;
+print 'input > ';
+#$foo = <STDIN>;
+$foo = 10;
+print 'input > ';
+#$bar = <STDIN>;
+$bar = 3;
 
-chomp $stdin01;
-chomp $stdin02;
+chomp $foo;
+chomp $bar;
 
-print 'stdin01 > ' . $stdin01 . "\n";
-print 'stdin02 > ' . $stdin02 . "\n";
+print '$foo : ', $foo, "\n";
+print '$bar : ', $bar, "\n";
 
-$res = $stdin01 + $stdin02;
-print $stdin01.' + '. $stdin02 .' = '.$res."\n";
-$res = $stdin01 - $stdin02;
-print $stdin01.' - '. $stdin02 .' = '.$res."\n";
-$res = $stdin01 * $stdin02;
-print $stdin01.' * '. $stdin02 .' = '.$res."\n";
-$res = $stdin01 / $stdin02;
-print $stdin01.' / '. $stdin02 .' = '.$res."\n";
+my $res;
 
+print "たし算 : ";
+$res = $foo + $bar;
+print $res, "\n";
+print "$foo + $bar = $res\n";
+
+print "引き算 : ";
+$res = $foo - $bar;
+print $res, "\n";
+print "$foo - $bar = $res\n";
+
+print "かけ算 : ";
+$res = $foo * $bar;
+print $res, "\n";
+print "$foo * $bar = $res\n";
+
+print "割り算 : ";
+$res = $foo / $bar;
+print $res, "\n";
+print "$foo / $bar = $res\n";
+
+print "あまり : ";
+$res = $foo % $bar;
+print $res, "\n";
+print "$foo % $bar = $res\n";
+
+print "べき乗 : ";
+$res = $foo ** $bar;
+print $res, "\n";
+print "$foo ** $bar = $res\n";
