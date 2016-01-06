@@ -1,7 +1,10 @@
 #!/usr/bin/env perl
 
+# 厳密な書式を定めたり, 未定義の変数を警告するといった効果があります
 use strict;
+# 望ましくない記述を警告してくれる効果があります
 use warnings;
+use feature ':5.10';
 
 # 配列@arrayに<STDIN>を使って3つの文字列を格納
 my @array;
@@ -11,17 +14,18 @@ for my $i (0 .. 2){
 	chomp $array[$i];
 }
 
-print "@array\n";
+say "@array";
 
 # ｢文字列として｣ソートしたもの
 my @array_sorted = sort {$a cmp $b} @array;
+
 # print "@array_sorted\n";
 for my $str (@array_sorted){
 	print "$str ";
 }
 print "\n";
 
-=pod	
+=pod
 ヒント
 
 プログラムの組み立て方を1つずつやってみましょう

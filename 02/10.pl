@@ -6,10 +6,15 @@ use strict;
 use warnings;
 use feature ':5.10';
 
-my $foo = 'hoge';
-my $bar = 123;
-my $baz = $foo . $bar; # hoge123
+# 文字列比較
 
-print $foo."\n";
-print $baz."\n";
-print $foo . $baz . "\n"; # hogehoge123
+# 今回は文字列を比較しているので, ==ではなくeqを用いています
+
+my $hoge = 'hello';
+if ( $hoge eq 'hello' ) {
+    print "OK";
+} else {
+    print "NG";
+}
+
+

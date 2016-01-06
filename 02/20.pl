@@ -6,10 +6,11 @@ use strict;
 use warnings;
 use feature ':5.10';
 
-my $foo = 'hoge';
-my $bar = 123;
-my $baz = $foo . $bar; # hoge123
+# 配列(計算)
 
-print $foo."\n";
-print $baz."\n";
-print $foo . $baz . "\n"; # hogehoge123
+my @array = ( 1, "hoge", 3 );
+my $sum = $array[0] + $array[2];
+print "$sum\n" # => 4
+
+#    配列の要素は普通のスカラ変数と同じように扱えるので, 代入や計算ができます
+
