@@ -1,20 +1,23 @@
 #!/usr/bin/env perl
-
-# 厳密な書式を定めたり, 未定義の変数を警告するといった効果があります
 use strict;
-# 望ましくない記述を警告してくれる効果があります
 use warnings;
+# perl 5.10 以降の全機能を使いたい
 use feature ':5.10';
 
-# 文字列比較
+# 制御構文(if)
 
-# 今回は文字列を比較しているので, ==ではなくeqを用いています
+my $hoge;
 
-my $hoge = 'hello';
-if ( $hoge eq 'hello' ) {
-    print "OK";
-} else {
-    print "NG";
+$hoge = 1;
+if ( $hoge == 1 ) {
+    print "OK\n"; # 条件が｢真｣の場合
 }
 
+    # elseの部分は省略することもできます
+        # この場合, 条件が偽の場合($hogeが1ではない場合)は, 何の処理も行われません
+
+$hoge = 0;
+if ( $hoge == 1 ) {
+    print "OK\n"; # 条件が｢偽｣の場合、何の処理も行われません
+}
 

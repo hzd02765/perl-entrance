@@ -1,20 +1,15 @@
 #!/usr/bin/env perl
-
-# Œµ–§‚È‘®‚ğ’è‚ß‚½‚è, –¢’è‹`‚Ì•Ï”‚ğŒx‚·‚é‚Æ‚¢‚Á‚½Œø‰Ê‚ª‚ ‚è‚Ü‚·
 use strict;
-# –]‚Ü‚µ‚­‚È‚¢‹Lq‚ğŒx‚µ‚Ä‚­‚ê‚éŒø‰Ê‚ª‚ ‚è‚Ü‚· 
 use warnings;
+# perl 5.10 ä»¥é™ã®å…¨æ©Ÿèƒ½ã‚’ä½¿ã„ãŸã„
 use feature ':5.10';
 
-my $name;
-my $age;
-my $height;
+my $name = 'papix';
+my $age = 25;
+my $height = 181;
+my $food = 'ramen';
 
-$name = "sakai tomoyuki";
-# $age = 36;
-$age = 37;
-$height = 167.8;
-
-print 'name : ', "$name\n";
-print 'age : ', "$age\n";
-print 'height : ', "$height\n";
+print "name : $name\n";
+print "age : $age\n";
+print "height : $height cm\n";
+print "food : $food\n";

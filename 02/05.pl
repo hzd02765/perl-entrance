@@ -1,29 +1,27 @@
 #!/usr/bin/env perl
-
-# Œµ–§‚È‘®‚ğ’è‚ß‚½‚è, –¢’è‹`‚Ì•Ï”‚ğŒx‚·‚é‚Æ‚¢‚Á‚½Œø‰Ê‚ª‚ ‚è‚Ü‚·
 use strict;
-# –]‚Ü‚µ‚­‚È‚¢‹Lq‚ğŒx‚µ‚Ä‚­‚ê‚éŒø‰Ê‚ª‚ ‚è‚Ü‚· 
 use warnings;
+# perl 5.10 ä»¥é™ã®å…¨æ©Ÿèƒ½ã‚’ä½¿ã„ãŸã„
 use feature ':5.10';
 
-# Šî–{“I‚È‰‰Zq
+# åŸºæœ¬çš„ãªæ¼”ç®—å­
 
 my $hoge = 4;
 my $foo  = 2;
+
 my $res;
-
 $res = $hoge + $foo;  # 4 + 2 = 6
-print "$hoge + $foo = $res\n";
+say "$res";
 $res = $hoge - $foo;  # 4 - 2 = 2
-print "$hoge - $foo = $res\n";
+say "$res";
 $res = $hoge * $foo;  # 4 * 2 = 8
-print "$hoge * $foo = $res\n";
+say "$res";
 $res = $hoge / $foo;  # 4 / 2 = 2
-print "$hoge / $foo = $res\n";
+say "$res";
 $res = $hoge % $foo;  # 4 % 2 = 0
-print "$hoge % $foo = $res\n";
-$res = $hoge ** $foo; # 4 ‚Ì 2æ ‚Í 16
-print "$hoge ** $foo = $res\n";
+say "$res";
+$res = $hoge ** $foo; # 4 ã® 2ä¹— ã¯ 16
+say "$res";
 
-# perl‚Å‚Í, CŒ¾Œê‚ÆˆÙ‚È‚è‚×‚«æ‚ÌŒvZ‚ğŠÈ’P‚És‚¤‚±‚Æ‚ª‚Å‚«‚Ü‚·
+    # perlã§ã¯, Cè¨€èªã¨ç•°ãªã‚Šã¹ãä¹—ã®è¨ˆç®—ã‚’ç°¡å˜ã«è¡Œã†ã“ã¨ãŒã§ãã¾ã™
 

@@ -1,14 +1,16 @@
 #!/usr/bin/env perl
-
-# Œµ–§‚È‘Ž®‚ð’è‚ß‚½‚è, –¢’è‹`‚Ì•Ï”‚ðŒx‚·‚é‚Æ‚¢‚Á‚½Œø‰Ê‚ª‚ ‚è‚Ü‚·
 use strict;
-# –]‚Ü‚µ‚­‚È‚¢‹Lq‚ðŒx‚µ‚Ä‚­‚ê‚éŒø‰Ê‚ª‚ ‚è‚Ü‚· 
 use warnings;
+# perl 5.10 ä»¥é™ã®å…¨æ©Ÿèƒ½ã‚’ä½¿ã„ãŸã„
 use feature ':5.10';
 
-# •W€“ü—Í
+# æ¨™æº–å…¥åŠ›
 
 print 'input > ';
 my $str = <STDIN>;
 chomp $str;
 print $str . "\n";
+
+    # ã“ã®ã‚³ãƒ¼ãƒ‰ã‚’å‹•ã‹ã—ã¦ã¿ã¾ã™
+        # <STDIN>ãŒã©ã®ã‚ˆã†ãªåƒãã‚’ã™ã‚‹ã‹è¦‹ã¦ã¿ã¾ã—ã‚‡ã†
+
